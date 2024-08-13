@@ -1,4 +1,4 @@
-import  React from "react"
+import  React, {useEffect}from "react"
 import { Model } from "../Models/TableModel"
 import { TableView } from "../Views/TableView"
 
@@ -58,5 +58,8 @@ export const TableController = () =>{
       }      
     }
   }
+  useEffect(()=>{
+    handleUpdate()
+  }, [])
   return <TableView data={model.data} updateData={handleUpdate} searchData={handleSearch} sortData={handleSort}/>
 }
