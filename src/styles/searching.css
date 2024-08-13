@@ -46,5 +46,4 @@
 
 .searching select, input:disabled {
   background-color: #eee;
-  cursor: not-allowed;
 }
