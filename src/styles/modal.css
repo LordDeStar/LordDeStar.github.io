@@ -1,0 +1,46 @@
+.modal {
+  position: absolute;
+  width: 350px;
+  height: 495px;
+  top: -100%;
+  left: calc(50% - 175px);
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgb(22, 225, 232), rgb(0, 203, 119));
+  cursor: default;
+  padding: 40px 20px;
+  animation-fill-mode: forwards;
+}
+.modal-text{
+  color: white;
+}
+.modal.closed {
+  animation-name: closeAnim;
+  animation-duration: 1s;
+}
+
+.modal.opened {
+  animation-name: openAnim;
+  animation-duration: 1s;
+}
+
+@keyframes openAnim {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes closeAnim {
+  0% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    top: -100%;
+  }
+}

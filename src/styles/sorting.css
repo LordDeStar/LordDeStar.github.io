@@ -1,0 +1,49 @@
+.sorting{
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 5px;
+  padding: 5px;
+  background: linear-gradient(45deg, rgb(22, 225, 232), rgb(0, 203, 119));
+}
+.sorting select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sorting select::-ms-expand {
+  display: none;
+}
+
+.sorting select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.sorting select:hover {
+  background-color: #aaa;
+}
+
+.sorting select:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+.sorting p {
+  color: rgb(123, 123, 123);
+}
+
+.sorting button {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(175, 255, 4);
+
+}
